@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.2'
+
+workspace 'RACSample.xcworkspace'
+
+xcodeproj 'RACSample.xcodeproj'
+
+link_with 'RACSample'
+
+use_frameworks!
+
+pod 'PureLayout'
+pod 'JSONModel'
+pod 'AFNetworking'
+pod 'CocoaLumberjack'
+pod 'IQKeyboardManager'
+pod 'FlatUIKit'
+pod 'ReactiveCocoa'
+pod 'CocoaSecurity'
+pod 'Firebase', '>= 2.5.0'
