@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  RACSample
+//
+//  Created by Derek Cheung on 4/3/2016.
+//  Copyright © 2016 Real.co. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// Logging
+#import <CocoaLumberjack/CocoaLumberjack.h>
+static const DDLogLevel ddLogLevel = DDLogLevelAll;
+
+// Autolayout
+#import "PureLayout.h"
+
+// FlatUIKit
+#import "FlatUIKit.h"
+
+// ReactiveCocoa
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/EXTScope.h>
+
+// AFNetworking
+#import <AFNetworking/AFNetworking.h>
+
+// CocoaSecurity
+#import "CocoaSecurity.h"
+
+// Firebase
+#import <Firebase/Firebase.h>
+
+//AppDelegate
+#import "AppDelegate.h"
+#define DELEGATE (AppDelegate*)[[UIApplication sharedApplication] delegate]
+
+#endif /* PrefixHeader_pch */
